@@ -1,7 +1,22 @@
-# Airline_management
+# Welcome to Airline_management
 
-## Requirements to Run Server Locally
+## Project Setup
 
-    - create a .env file in root directory and  paste the below code in it.
+- clone the project on your local
+- Execute `npm install` on the same path as your local direcotyr of the downloaded project
+- create a .env file in root directory and add the following snvironment variable
+  - `PORT=4747`
+- Inside the src/config folder create a new file `config.json` abd then add the following piese of json
 
-        `PORT = 4747`
+```
+{
+    "development": {
+    "username": <YOUR_DB_LOGIN_NAME>,
+    "password": <YOUR_DB_PASSWORD>,
+    "database": <DB_NAME>,
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+
+```
